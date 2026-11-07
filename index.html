@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Sports World</h1>
+            <form action="" method="post" id="sportsDet">
+                <select name="sport" id="sport" required>
+                    <option value="cricket">Cricket</option>
+                    <option value="football">Football</option>
+                    <option value="tennis">Tennis</option>
+                    <option value="Basketball">Basket ball</option>
+
+                </select>
+                <input type="text" name="num_of_sport" id="num_of_sport" placeholder="Number of sports update"
+                    value="10">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="content-body" id="contentBody">
+            <h2 id="message"><i>Select the sport and explore it.</i><i class="fa-solid fa-spinner fa-spin" id="spinner"></i></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

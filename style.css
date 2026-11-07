@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    background-color: hsl(0, 4%, 90%);
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.container .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    width: 100%;
+}
+
+.container .header input,select{
+    padding: 8px 10px;
+    border: 1px solid #7e7d80;
+    outline: none;
+}
+.container .header button{
+    padding: 8px 15px;
+}
+
+.container .content-body{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.container .content-body .card{
+    border: 1px solid #757474;
+    border-radius: 10px;
+    box-sizing: border-box;
+    flex: 1 1 250px;
+}
+
+.container .content-body #message #spinner{
+    display: none;
+}
+
+.container .content-body .card .status{
+    display: flex;
+    justify-content: end;
+    background-color: rgb(218, 219, 220);
+    padding: 7px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid #757474;
+}
+
+.container .content-body .card .status .finished{
+    background-color: rgb(17, 160, 17);
+    padding: 4px 6px;
+    color: white;
+    border-radius: 25px;
+}
+
+.container .content-body .card .status .live{
+    background-color: rgb(63, 29, 186);
+    padding: 4px 6px;
+    color: white;
+    border-radius: 25px;
+}
+
+.container .content-body .card .status .upcoming{
+    background-color: rgb(213, 101, 41);
+    padding: 4px 6px;
+    color: white;
+    border-radius: 25px;
+}
+
+.container .content-body .card .card-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    gap: 10px;
+}
+
+.container .content-body .card .card-head img{
+    width: 40px;
+    height: 30px;
+    border: 2px solid #3b3b3b;
+    border-radius: 5px;
+}
+
+.container .content-body .card .card-body{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.container .content-body .card .card-body img{
+    width: 60px;
+}
+
+.container .content-body .card:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.3s;
+}
